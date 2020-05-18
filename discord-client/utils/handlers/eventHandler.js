@@ -2,7 +2,7 @@ const { readdirSync } = require('fs');
 
 module.exports = (bot) => {
     const load = dirs => {
-        const events = readdirSync(`./src/events/${dirs}/`).filter(d => d.endsWith('.js'));
+        const events = readdirSync(`../../src/events/${dirs}/`).filter(d => d.endsWith('.js'));
 
         for (let file of events) {
             const evt = require(`../../src/events/${dirs}/${file}`);
@@ -11,6 +11,6 @@ module.exports = (bot) => {
         }
     }
 
-    ['client', 'guild'].forEach(x => load(x));
+    [].forEach(x => load(x));
 
 }
