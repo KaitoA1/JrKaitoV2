@@ -1,7 +1,8 @@
+const { webServerPORT } = require('../Settings/server.json');
+
 const { createServer } = require('http');
 const { readFileSync } = require('fs');
 
-const port = 53134
 
 createServer((req, res) => {
     let responseCode = 404;
@@ -9,7 +10,7 @@ createServer((req, res) => {
 
     if(req.url === '/') {
         responseCode = 200;
-        content = readFileSync('./index.html');
+        content = readFileSync('./web-server/index.html');
     }
 
     res.writeHead(responseCode, {
@@ -19,4 +20,4 @@ createServer((req, res) => {
     res.write(content);
     res.end();
 })
-    .listen(port);
+    .listen(webServerPORT);
