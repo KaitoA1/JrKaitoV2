@@ -1,6 +1,6 @@
 {
   "name": "jrkaito",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A discord bot made by Matthew Nguyen",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/KaitoA1/JrKaitoV2/issues"
   },
-  "homepage": "https://github.com/KaitoA1/JrKaitoV2#readme"
+  "homepage": "https://github.com/KaitoA1/JrKaitoV2#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  }
 }
