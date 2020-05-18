@@ -1,4 +1,4 @@
-colorERROR
+const { errorCOLOR } = require('../../../Settings/discordClient.json');
 
 const { MessageEmbed } = require('discord.js');
 

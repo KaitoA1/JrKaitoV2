@@ -1,5 +1,5 @@
 require('dotenv').config();
-botPREFIX
+const { botPREFIX } = require('../../../../Settings/discordClient.json')
 const { notOwner } = require('../../../utils/messages/error.js');
 
 module.exports = async (bot, message) => {
