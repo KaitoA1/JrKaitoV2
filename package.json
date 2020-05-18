@@ -1,6 +1,6 @@
 {
   "name": "jrkaito",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A discord bot made by Matthew Nguyen",
   "main": "index.js",
   "scripts": {
